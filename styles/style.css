@@ -26,7 +26,7 @@ li {
 
 header {
   background: url(../assets/img/bg-slider-06.jpg) center/cover;
-  height: 100vh;
+  min-height: 100vh;
   color: #fffefe;
   padding: 50px;
 }
@@ -35,15 +35,17 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
-  width: 85%;
-  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav h3 {
   font-family: "font-1";
+  font-size: 2.5rem;
 }
 
 header nav .menu {
@@ -53,7 +55,15 @@ header nav .menu {
 }
 
 header nav .menu li {
-  padding: 0 50px;
+  padding: 0 40px;
+  font-size: 0.9rem;
+  font-family: "font-3";
+}
+
+header nav .menu li:hover {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header nav .icons {
@@ -63,6 +73,47 @@ header nav .icons {
 }
 
 header nav .icons li {
-  padding: 0 30px;
+  padding: 0 20px;
+}
+
+header nav .icons li:hover {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav .icons img {
+  height: 70%;
+}
+
+header .text {
+  text-align: center;
+  padding-top: 230px;
+}
+
+header .text h3 {
+  font-family: "font-1";
+  font-size: 4rem;
+  color: #a67245;
+  font-weight: 100;
+  margin: 0;
+  line-height: 0px;
+}
+
+header .text h2 {
+  font-family: "font-2";
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 20px;
+}
+
+header .text img {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+header .text p {
+  font-family: "font-3";
+  letter-spacing: 10px;
 }
 /*# sourceMappingURL=style.css.map */

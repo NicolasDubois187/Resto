@@ -1,19 +1,20 @@
 header {
+    
     background: url(../assets/img/bg-slider-06.jpg) center/cover;
-    height: 100vh;
+    min-height: 100vh;
     color: rgb(255, 254, 254);
     padding: 50px;
     
 
     nav {
         display: flex;
-        justify-content: space-around;
-        text-align: center;
-        width: 85%;
-        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+        
 
         & h3 {
             font-family: "font-1";
+            font-size: 2.5rem;
         }
 
         & .menu {
@@ -21,13 +22,57 @@ header {
             
         }
         & .menu li {
-            padding: 0 50px;
+            padding: 0 40px;
+            font-size: 0.9rem;
+            font-family: "font-3";
+            &:hover {
+                cursor: pointer;
+                transition: 0.3s;
+            }
         }
         & .icons {
             display: flex;
         }
         & .icons li {
-            padding: 0 30px;
+            padding: 0 20px;
+            &:hover {
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            
+        }
+        & .icons img {
+            height: 70%;
+        }
+    }
+    .text {
+        text-align: center;
+        padding-top: 230px;
+
+        & h3 {
+            font-family: "font-1";
+            font-size: 4rem;
+            color: rgb(166, 114, 69);
+            font-weight: 100;
+            margin: 0;
+            line-height: 0px;
+            
+        }
+        & h2 {
+            font-family: "font-2";
+            font-size: 3.5rem;
+            font-weight: 600;
+            letter-spacing: 20px;
+        }
+
+        & img {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+        }
+        & p {
+            font-family: "font-3";
+            letter-spacing: 10px;
         }
     }
 }
