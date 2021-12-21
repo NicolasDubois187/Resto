@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "font-2";
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "font-3";
+    src: url(../assets/fonts/Roboto-Light.ttf);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,3 +21,4 @@
 li {
     list-style: none;
 }
+

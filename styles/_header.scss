@@ -1,0 +1,33 @@
+header {
+    background: url(../assets/img/bg-slider-06.jpg) center/cover;
+    height: 100vh;
+    color: rgb(255, 254, 254);
+    padding: 50px;
+    
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 85%;
+        margin: 0 auto;
+
+        & h3 {
+            font-family: "font-1";
+        }
+
+        & .menu {
+            display: flex;
+            
+        }
+        & .menu li {
+            padding: 0 50px;
+        }
+        & .icons {
+            display: flex;
+        }
+        & .icons li {
+            padding: 0 30px;
+        }
+    }
+}

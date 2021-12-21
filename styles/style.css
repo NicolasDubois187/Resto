@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url(../assets/fonts/Roboto-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,5 +22,47 @@
 
 li {
   list-style: none;
+}
+
+header {
+  background: url(../assets/img/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+  color: #fffefe;
+  padding: 50px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+header nav h3 {
+  font-family: "font-1";
+}
+
+header nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .menu li {
+  padding: 0 50px;
+}
+
+header nav .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .icons li {
+  padding: 0 30px;
 }
 /*# sourceMappingURL=style.css.map */
