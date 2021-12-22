@@ -20,6 +20,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style: none;
 }
@@ -33,6 +37,8 @@ header {
   min-height: 100vh;
   color: #fffefe;
   padding: 50px;
+  position: relative;
+  z-index: 1000;
 }
 
 header nav {
@@ -52,19 +58,19 @@ header nav h3 {
   font-size: 2.5rem;
 }
 
-header nav .menu {
+header nav .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header nav .menu li {
+header nav .nav-menu li {
   padding: 0 40px;
   font-size: 0.9rem;
   font-family: "font-3";
 }
 
-header nav .menu li:hover {
+header nav .nav-menu li:hover {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -230,6 +236,12 @@ header .text p {
   font-family: "font-2";
 }
 
+.menu ul li:hover {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .menu .plats {
   position: relative;
   background: #fbfaf6;
@@ -312,5 +324,374 @@ header .text p {
           align-items: center;
   font-size: 1.1rem;
   font-family: "font-2";
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 1fr;
+      grid-template-columns: 30% 1fr;
+  max-width: 75%;
+  margin: 70px auto 30px;
+}
+
+.contact .horaires-container {
+  background: black;
+}
+
+.contact .horaires-container .horaires {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-style: dashed;
+  border-color: #fbfaf62f;
+  border-width: 1px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.contact .horaires-container .horaires h3 {
+  font-family: "font-1";
+  color: #a67245;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.contact .horaires-container .horaires h4 {
+  font-family: "font-2";
+  color: #eee;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  margin-top: -20px;
+}
+
+.contact .horaires-container .horaires img {
+  margin-top: 20px;
+}
+
+.contact .horaires-container .horaires h5 {
+  font-family: "font-2";
+  color: #a67245;
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin: 30px auto 10px;
+}
+
+.contact .horaires-container .horaires p {
+  font-family: "font-3";
+  color: #eee;
+  font-size: 0.8rem;
+}
+
+.contact .formulaire-container {
+  background: #eee;
+}
+
+.contact .formulaire-container .formulaire {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.contact .formulaire-container .formulaire h4 {
+  font-family: "font-1";
+  color: #a67245;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.contact .formulaire-container .formulaire h3 {
+  font-family: "font-2";
+  color: black;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin: -20px;
+  font-weight: 600;
+}
+
+.contact .formulaire-container .formulaire img {
+  margin: 50px 0 40px;
+}
+
+.contact .formulaire-container .formulaire .form-container form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact .formulaire-container .formulaire .form-container form input {
+  border: thin;
+  background: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+  padding-bottom: 10px;
+}
+
+.contact .formulaire-container .formulaire .form-container form input:hover {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact .formulaire-container .formulaire a button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: black;
+  font-family: "font-2";
+  color: #eee;
+  letter-spacing: 5px;
+  border-width: 1px;
+}
+
+.contact .formulaire-container .formulaire a button:hover {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.events {
+  background: #21201e;
+  padding: 50px 0 90px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.events .events-container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.events .events-container h2 {
+  font-size: 2.5rem;
+  color: #a69045;
+  font-weight: 100;
+  font-family: "font-1";
+}
+
+.events .events-container h4 {
+  font-family: "font-2";
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #eee;
+  margin-top: -12px;
+}
+
+.events .events-container img {
+  margin: 40px 0;
+}
+
+.events .events-container .event-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 58% 1fr;
+      grid-template-columns: 58% 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "event1 event3" "event2 event3";
+  gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .events .events-container .event-grid {
+    display: block;
+  }
+  .events .events-container .event-grid > div {
+    margin: 20px;
+  }
+}
+
+.events .events-container .event-grid .date-content {
+  background: #333;
+  height: 86px;
+  width: 86px;
+  margin: 0 auto;
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 22px;
+}
+
+.events .events-container .event-grid .date-content h6 {
+  font-size: 1.2rem;
+  font-family: "font-3";
+}
+
+.events .events-container .event-grid .date-content span {
+  font-family: "font-3";
+}
+
+.events .events-container .event-grid .infos {
+  background: #eee;
+}
+
+.events .events-container .event-grid .infos h3 {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-left: 8px;
+  font-family: "font-2";
+}
+
+.events .events-container .event-grid .infos p {
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-family: "font-3";
+}
+
+.events .events-container .event-grid .infos p img {
+  margin: 0;
+  height: 10px;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.events .events-container .event-grid .infos p img:last-child {
+  margin-left: 5px;
+}
+
+.events .events-container .event-grid .infos a button {
+  letter-spacing: 2px;
+  margin-top: 25px;
+  font-family: "font-2";
+  border: none;
+}
+
+.events .events-container .event-grid .event-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 39% 61%;
+      grid-template-columns: 39% 61%;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .events .events-container .event-grid .event-left {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.events .events-container .event-grid .event-left .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.events .events-container .event-grid .event-left .infos {
+  padding: 30px 20px;
+}
+
+.events .events-container .event-grid .event-1 .date {
+  background: url(../assets/img/event-01.jpg) center/cover;
+}
+
+.events .events-container .event-grid .event-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: event2;
+}
+
+.events .events-container .event-grid .event-2 .date {
+  background: url(../assets/img/event-02.jpg) center/cover;
+}
+
+.events .events-container .event-grid .event-3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: event3;
+  background: url(../assets/img/event-03.jpg) center/cover;
+  padding: 25px;
+}
+
+.events .events-container .event-grid .event-3 .infos {
+  height: 100%;
+  padding: 0 12px;
+}
+
+.events .events-container .event-grid .event-3 .infos h3 {
+  margin: 40px 0 15px;
+}
+
+.events .events-container .event-grid .event-3 .infos h5 {
+  padding: 45px;
+}
+
+.mots-du-chef {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #eee;
+  max-width: 75%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.mots-du-chef img {
+  border-radius: 150px;
+  height: 90px;
+  margin-top: -50px;
+}
+
+.mots-du-chef p img {
+  height: 10px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.mots-du-chef p {
+  font-family: "font-3";
+  line-height: 30px;
+  max-width: 80%;
+  margin: 30px auto;
+  font-size: 1.2rem;
+}
+
+.mots-du-chef h4 {
+  font-family: "font-2";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.mots-du-chef h6 {
+  font-family: "font-3";
+  color: #a69045;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

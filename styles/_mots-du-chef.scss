@@ -1,0 +1,39 @@
+.mots-du-chef {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:  #eee;
+    max-width: 75%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    img {
+        border-radius: 150px;
+        height: 90px;
+        margin-top: -50px;
+    }
+    p img {
+        height: 10px;
+        transform: translateY(-5px);    
+    }
+    p {
+        font-family: "font-3";
+        line-height: 30px;
+        max-width: 80%;
+        margin: 30px auto;
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-family: "font-2";
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    h6 {
+        font-family: "font-3";
+        color: rgb(166, 144, 69);
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    
+}

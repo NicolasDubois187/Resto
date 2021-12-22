@@ -4,12 +4,16 @@ header {
     min-height: 100vh;
     color: rgb(255, 254, 254);
     padding: 50px;
+    position: relative;
+    z-index: 1000;
+    
     
 
     nav {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+       
         
 
         & h3 {
@@ -17,11 +21,11 @@ header {
             font-size: 2.5rem;
         }
 
-        & .menu {
+        & .nav-menu {
             display: flex;
             
         }
-        & .menu li {
+        & .nav-menu li {
             padding: 0 40px;
             font-size: 0.9rem;
             font-family: "font-3";
