@@ -24,6 +24,10 @@ li {
   list-style: none;
 }
 
+main {
+  background: #21201e;
+}
+
 header {
   background: url(../assets/img/bg-slider-06.jpg) center/cover;
   min-height: 100vh;
@@ -115,5 +119,198 @@ header .text img {
 header .text p {
   font-family: "font-3";
   letter-spacing: 10px;
+}
+
+.our-store {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 1fr;
+      grid-template-columns: 50% 1fr;
+}
+
+.our-store .text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgba(166, 114, 69, 0.267);
+}
+
+.our-store .text h3 {
+  font-family: "font-1";
+  color: #a67245;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.our-store .text h4 {
+  font-family: "font-2";
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-top: -10px;
+}
+
+.our-store .text img {
+  margin: 20px 0 20px;
+}
+
+.our-store .text p {
+  font-family: "font-3";
+  font-weight: 500;
+}
+
+.our-store .text .avatar-01 {
+  border-radius: 150px;
+}
+
+.our-store .text h5 {
+  font-family: "font-2";
+  font-size: 1.2rem;
+}
+
+.our-store .text h6 {
+  font-family: "font-3";
+  font-size: .9rem;
+  color: rgba(128, 128, 128, 0.521);
+  margin-bottom: 20px;
+}
+
+.our-store .our-store-img {
+  background: url(../assets/img/store-01.jpg) center/cover;
+}
+
+.menu {
+  text-align: center;
+  color: #eee;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.menu:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 620px;
+  background: url(../assets/img/bg-menu-01.jpg) center/cover;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: -330px;
+}
+
+.menu h5 {
+  color: #a67245;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 60px 0 30px;
+  font-family: "font-1";
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.menu ul li {
+  border-bottom: 1px solid rgba(238, 238, 238, 0.6);
+  padding-bottom: 8px;
+  font-family: "font-2";
+}
+
+.menu .plats {
+  position: relative;
+  background: #fbfaf6;
+  color: #222;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+  border-top: 4px solid #af7746;
+  padding: 15px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .menu .plats {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.menu .plats .plat {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 60% 15%;
+      grid-template-columns: 25% 60% 15%;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.18);
+  padding: 30px 0;
+  margin: 0 20px;
+}
+
+.menu .plats .plat img {
+  border-radius: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu .plats .plat .text-plat {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10px;
+}
+
+.menu .plats .plat .text-plat h3 {
+  text-transform: uppercase;
+  color: #222;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  font-family: "font-2";
+  font-weight: 600;
+}
+
+.menu .plats .plat .text-plat p {
+  color: #222;
+  font-size: 0.8rem;
+  font-family: "font-3";
+  font-weight: 300;
+}
+
+.menu .plats .plat > p {
+  color: #a67245;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  font-family: "font-2";
 }
 /*# sourceMappingURL=style.css.map */
