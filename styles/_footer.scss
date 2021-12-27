@@ -1,0 +1,79 @@
+footer {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    
+
+    .footer-left {
+        padding: 50px;
+        padding-left: 200px;
+        line-height: 35px;
+        background: black;
+
+        h6 {
+            font-family: "font-1";
+            font-size: 3rem;
+            color: rgb(166, 144, 69);
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: "font-3";
+            color: rgba(238, 238, 238, 0.507);
+        }
+    }
+    .footer-right {
+        padding: 50px;
+        background: #21201e;
+
+        h5 {
+            color: #eee;
+            font-family: "font-3";
+            font-size: 1.2rem;
+
+        }
+        .newsletter input {
+
+            margin: 20px auto;
+            background: none;
+            padding: 10px 15px;
+            padding-right: 80px;
+            border: solid 1px rgba(166, 143, 69, 0.301);
+            
+            font-size: 1rem;
+            &:hover {
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+        }
+        .follow {
+            display: flex;
+            margin-top: 50px;
+            
+            ul {
+                display: flex;
+
+                li {
+                    margin: auto 20px;
+                    
+
+                    img {
+                        height: 15px;
+                        &:hover {
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+                        
+                    }
+
+                   
+                }
+               
+            }
+
+            
+        }
+        
+
+    }
+}
