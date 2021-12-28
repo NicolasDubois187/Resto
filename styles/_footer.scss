@@ -1,6 +1,10 @@
 footer {
     display: grid;
     grid-template-columns: 50% 1fr;
+
+    @media screen and (max-width: 600px) {
+        display: block;
+      }
     
 
     .footer-left {
@@ -8,6 +12,14 @@ footer {
         padding-left: 200px;
         line-height: 35px;
         background: black;
+
+        @media screen and (max-width: 875px) {
+            line-height: 25px;
+          }
+        
+        @media screen and (max-width: 1050px) {
+            padding-left: 50px;
+          }
 
         h6 {
             font-family: "font-1";
@@ -19,6 +31,10 @@ footer {
         p {
             font-family: "font-3";
             color: rgba(238, 238, 238, 0.507);
+
+            @media screen and (max-width: 650px) {
+                font-size: 0.9rem;
+              }
         }
     }
     .footer-right {
@@ -45,16 +61,28 @@ footer {
                 transition: 0.3s;
             }
 
+         
+
         }
         .follow {
             display: flex;
             margin-top: 50px;
+
+            @media screen and (max-width: 875px) {
+                display: block;
+              }
             
             ul {
                 display: flex;
 
                 li {
                     margin: auto 20px;
+
+                    @media screen and (max-width: 875px) {
+                        margin-top: 20px;
+                        margin-left: 0px;
+                        
+                      }
                     
 
                     img {
@@ -63,6 +91,9 @@ footer {
                             cursor: pointer;
                             transition: 0.3s;
                         }
+                        @media screen and (max-width: 875px) {
+                            transform: translateX(-3px);
+                          }
                         
                     }
 

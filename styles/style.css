@@ -120,7 +120,7 @@ header nav .icons img {
 
 header .text {
   text-align: center;
-  padding-top: 180px;
+  padding-top: 150px;
 }
 
 @media (max-width: 500px) {
@@ -158,6 +158,12 @@ header .text h2 {
   }
 }
 
+@media (max-width: 415px) {
+  header .text h2 {
+    letter-spacing: 5px;
+  }
+}
+
 header .text img {
   padding-top: 50px;
   padding-bottom: 40px;
@@ -191,6 +197,13 @@ header .text p {
   display: grid;
   -ms-grid-columns: 50% 1fr;
       grid-template-columns: 50% 1fr;
+}
+
+@media (max-width: 750px) {
+  .our-store {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .our-store .text {
@@ -236,6 +249,12 @@ header .text p {
   border-radius: 150px;
 }
 
+@media (max-width: 750px) {
+  .our-store .text .avatar-01 {
+    height: 100px;
+  }
+}
+
 .our-store .text h5 {
   font-family: "font-2";
   font-size: 1.2rem;
@@ -250,6 +269,12 @@ header .text p {
 
 .our-store .our-store-img {
   background: url(../assets/img/store-01.jpg) center/cover;
+}
+
+@media (max-width: 750px) {
+  .our-store .our-store-img {
+    display: none;
+  }
 }
 
 .menu {
@@ -295,6 +320,24 @@ header .text p {
   font-family: "font-2";
 }
 
+@media (max-width: 750px) {
+  .menu ul li {
+    margin: auto 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu ul li {
+    margin: auto 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu ul li {
+    font-size: 0.8rem;
+  }
+}
+
 .menu ul li:hover {
   cursor: pointer;
   -webkit-transition: 0.3s;
@@ -319,7 +362,7 @@ header .text p {
       grid-template-columns: 50% 50%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .menu .plats {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -346,6 +389,12 @@ header .text p {
       align-self: center;
 }
 
+@media (max-width: 750px) {
+  .menu .plats .plat img {
+    width: 50%;
+  }
+}
+
 .menu .plats .plat .text-plat {
   text-align: left;
   display: -webkit-box;
@@ -368,6 +417,12 @@ header .text p {
   margin-bottom: 5px;
   font-family: "font-2";
   font-weight: 600;
+}
+
+@media (max-width: 450px) {
+  .menu .plats .plat .text-plat h3 {
+    font-size: 0.7rem;
+  }
 }
 
 .menu .plats .plat .text-plat p {
@@ -395,6 +450,16 @@ header .text p {
       grid-template-columns: 30% 1fr;
   max-width: 75%;
   margin: 70px auto 30px;
+}
+
+@media (max-width: 1060px) {
+  .contact {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .contact .horaires-container {
@@ -494,6 +559,22 @@ header .text p {
   gap: 20px;
 }
 
+@media (max-width: 630px) {
+  .contact .formulaire-container .formulaire .form-container form {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact .formulaire-container .formulaire .form-container form {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 .contact .formulaire-container .formulaire .form-container form input {
   border: thin;
   background: none;
@@ -570,13 +651,18 @@ header .text p {
   gap: 20px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1380px) {
   .events .events-container .event-grid {
-    display: block;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "event1" "event2" "event3";
   }
-  .events .events-container .event-grid > div {
-    margin: 20px;
-  }
+}
+
+.events .events-container .event-grid > div {
+  margin: 20px;
 }
 
 .events .events-container .event-grid .date-content {
@@ -665,13 +751,6 @@ header .text p {
   text-align: left;
 }
 
-@media screen and (max-width: 600px) {
-  .events .events-container .event-grid .event-left {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .events .events-container .event-grid .event-left .date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -689,6 +768,12 @@ header .text p {
   background: url(../assets/img/event-01.jpg) center/cover;
 }
 
+@media screen and (max-width: 1380px) {
+  .events .events-container .event-grid .event-1 {
+    height: 150px;
+  }
+}
+
 .events .events-container .event-grid .event-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -699,6 +784,12 @@ header .text p {
   background: url(../assets/img/event-02.jpg) center/cover;
 }
 
+@media screen and (max-width: 1380px) {
+  .events .events-container .event-grid .event-2 {
+    height: 150px;
+  }
+}
+
 .events .events-container .event-grid .event-3 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -706,6 +797,12 @@ header .text p {
   grid-area: event3;
   background: url(../assets/img/event-03.jpg) center/cover;
   padding: 25px;
+}
+
+@media screen and (max-width: 1380px) {
+  .events .events-container .event-grid .event-3 {
+    height: 150px;
+  }
 }
 
 .events .events-container .event-grid .event-3 .infos {
@@ -795,11 +892,29 @@ footer {
       grid-template-columns: 50% 1fr;
 }
 
+@media screen and (max-width: 600px) {
+  footer {
+    display: block;
+  }
+}
+
 footer .footer-left {
   padding: 50px;
   padding-left: 200px;
   line-height: 35px;
   background: black;
+}
+
+@media screen and (max-width: 875px) {
+  footer .footer-left {
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  footer .footer-left {
+    padding-left: 50px;
+  }
 }
 
 footer .footer-left h6 {
@@ -813,6 +928,12 @@ footer .footer-left h6 {
 footer .footer-left p {
   font-family: "font-3";
   color: rgba(238, 238, 238, 0.507);
+}
+
+@media screen and (max-width: 650px) {
+  footer .footer-left p {
+    font-size: 0.9rem;
+  }
 }
 
 footer .footer-right {
@@ -848,6 +969,12 @@ footer .footer-right .follow {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 875px) {
+  footer .footer-right .follow {
+    display: block;
+  }
+}
+
 footer .footer-right .follow ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -858,6 +985,13 @@ footer .footer-right .follow ul li {
   margin: auto 20px;
 }
 
+@media screen and (max-width: 875px) {
+  footer .footer-right .follow ul li {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
 footer .footer-right .follow ul li img {
   height: 15px;
 }
@@ -866,5 +1000,12 @@ footer .footer-right .follow ul li img:hover {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 875px) {
+  footer .footer-right .follow ul li img {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
