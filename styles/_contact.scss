@@ -3,6 +3,9 @@
     grid-template-columns: 30% 1fr;
     max-width: 75%;
     margin: 70px auto 30px;
+    @media screen and (max-width: 680px) {
+        margin-bottom: 100px;
+      }
 
     @media (max-width: 1060px) {
         grid-template-columns: 1fr;

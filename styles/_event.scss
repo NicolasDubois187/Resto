@@ -3,6 +3,9 @@
     padding: 50px 0 90px;
     margin-bottom: 60px;
     text-align: center;
+    @media screen and (max-width: 680px) {
+      display: none;
+    }
   
     .events-container {
       max-width: 75%;
@@ -35,12 +38,10 @@
         gap: 20px;
   
         @media screen and (max-width: 1380px) {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-          grid-template-areas: 
-          "event1"
-          "event2"
-          "event3";
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+       
           
         }
           
@@ -77,6 +78,12 @@
               font-weight: 500;
               padding-left: 8px;
               font-family: "font-2";
+              @media screen and (max-width: 1380px) {
+                padding-left: 0;
+              }
+              @media screen and (max-width: 800px) {
+                font-size: 1.1rem;;
+              }
             }
             p {
               font-size: 0.9rem;
@@ -84,6 +91,10 @@
               margin-top: 20px;
               letter-spacing: 1px;
               font-family: "font-3";
+
+              @media screen and (max-width: 800px) {
+                font-size: 0.8rem;
+              }
 
              
     
@@ -123,46 +134,90 @@
             }
             .infos {
               padding: 30px 20px;
+              @media screen and (max-width: 1380px) {
+                
+              }
             }
         }
         .event-1 {
+          @media screen and (max-width: 1380px) {
+            height: 200px;
+          }
             .date {
               background: url(../assets/img/event-01.jpg) center/cover;
+            
+             
             }
-            @media screen and (max-width: 1380px) {
-              height: 150px;
-            }
+           
         }
     
         .event-2 {
             grid-area: event2;
+            @media screen and (max-width: 1380px) {
+              height: 200px;
+            }
     
             .date {
               background: url(../assets/img/event-02.jpg) center/cover;
             }
-            @media screen and (max-width: 1380px) {
-              height: 150px;
-            }
+           
 
         }
         .event-3 {
             grid-area: event3;
             background: url(../assets/img/event-03.jpg) center/cover;
             padding: 25px;
-
             @media screen and (max-width: 1380px) {
-              height: 150px;
-              
+              background: none;
+              padding: 0;
             }
 
-                   
-    
             .infos {
               height: 100%;
               padding: 0 12px;
+
+              @media screen and (max-width: 1380px) {
+                padding: 0;
+                display: grid;
+                grid-template-columns: 39% 61%;
+                grid-template-rows: 1fr;
+              }
+
+              .date {
+
+                @media screen and (max-width: 1380px) {
+                  background: url(../assets/img/event-03.jpg) center/cover;
+                  height: 200px;
+                  width: auto;
+                  position: relative;
+                  
+                  
+                }
+                .date-content {
+                  @media screen and (max-width: 1380px) {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    
+
+                  }
+                }
+              }
+              .event-3-info {
+                @media screen and (max-width: 1380px) {
+                  text-align: left;
+                  padding-left: 20px;
+                  margin: 0;
+                }
+              }
+
+            
     
               h3 {
                 margin: 40px 0 15px;
+                @media screen and (max-width: 1380px) {}
+                padding: 0;
               }
               h5 {
                 padding: 45px;
